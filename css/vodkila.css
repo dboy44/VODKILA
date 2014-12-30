@@ -10,7 +10,7 @@ body {
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: #fff;
+    background-color: #000;
 }
 
 html {
@@ -87,7 +87,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
-    outline: 0;
+    outline: 1px solid #000;
 }
 
 .navbar-custom a {
@@ -107,18 +107,25 @@ a:focus {
 
 
 .navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active,
-.navbar-custom .nav li a:hover
+.navbar-custom .nav li a.active
  {
     outline: 1px solid #FE0506;
     background-color: rgba(255,255,255,.3); 
     color: #FE0506;   
+   /* text-shadow: -1px 0 #FE0506, 0 1px #FE0506, 1px 0 #FE0506, 0 -1px #FE0506;*/
 }
+
+.navbar-custom .nav li a:hover
+ {
+    outline: 0;    
+    background-color: rgba(255,255,255,.3); 
+    color: #FE0506;   
+}
+
 
 .navbar {
     background: #666 repeat scroll 0 0 ;
     border-bottom: 0 none;
-    letter-spacing: 1px;
     padding: 0;
     transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
 }
@@ -128,7 +135,6 @@ a:focus {
     .navbar {
         padding: 0;
         border-bottom: 0;
-        letter-spacing: 1px;
         background: #666;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -166,13 +172,15 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg5.jpg);
-     background-size: 100%;
-     background-repeat: no-repeat;
-        background-position: 0 0;
+    background: url("../img/intro-bg6.png") no-repeat scroll 0 5% / cover  rgba(0, 0, 0, 0);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+
+
 }
 
 .intro .intro-body {
@@ -193,7 +201,7 @@ a:focus {
 
 .intro {
     height: 100%;
-    margin: 60px auto;
+    margin: 5% 0  auto;
 }
 
 @media(min-width:767px) {
@@ -211,6 +219,49 @@ a:focus {
     }
 }
 
+
+#tvs {
+    /*display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("../img/intro-bg.jpg") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    margin: 0 auto;
+    opacity: 0.5;*/
+
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("../img/about_bg2.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
+    background-repeat:no-repeat;
+    background-position:center;
+
+}
+
+
+/*
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}*/
+
+
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -224,6 +275,8 @@ a:focus {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+
+
 }
 
 .btn-circle:hover,
@@ -251,6 +304,9 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+.btn{
+    margin-bottom: -250px; 
+}
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
@@ -364,6 +420,15 @@ ul.banner-social-buttons {
 
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
+    }
+
+    .intro {
+    height: 100%;
+    margin: 0 auto;
+    }
+
+    .btn{
+    margin-bottom: -20%; 
     }
 }
 
