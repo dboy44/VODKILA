@@ -10,7 +10,7 @@ body {
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: #000;
+    background-color: #fff;
 }
 
 html {
@@ -109,7 +109,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active
  {
-    outline: 1px solid #FE0506;
+    outline: 0px solid #FE0506;
     background-color: rgba(255,255,255,.3); 
     color: #FE0506;   
    /* text-shadow: -1px 0 #FE0506, 0 1px #FE0506, 1px 0 #FE0506, 0 -1px #FE0506;*/
@@ -201,7 +201,8 @@ a:focus {
 
 .intro {
     height: 100%;
-    margin: 5% 0  auto;
+/*    margin: 5% 0  auto;*/
+    opacity: .62;
 }
 
 @media(min-width:767px) {
@@ -220,7 +221,7 @@ a:focus {
 }
 
 
-#tvs {
+#about {
     /*display: table;
     width: 100%;
     height: 100%;
@@ -233,17 +234,20 @@ a:focus {
     margin: 0 auto;
     opacity: 0.5;*/
 
-    display: table;
+    /*display: table;*/
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
     color: #fff;
-    background: url("../img/about_bg2.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
+    background: url("../img/about_bg3.png") no-repeat scroll 0 0 / contain  #fff;
     background-repeat:no-repeat;
-    background-position:center;
+    background-position:top center;
 
 }
 
+#about_text{
+
+}
 
 /*
 @media(min-width:767px) {
@@ -304,9 +308,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-.btn{
-    margin-bottom: -250px; 
-}
+
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
