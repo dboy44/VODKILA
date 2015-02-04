@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    /*margin: 0 0 35px;*/
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -236,12 +236,12 @@ a:focus {
 
     /*display: table;*/
     width: 100%;
-    height: auto;
+    height: 100%;
     text-align: center;
     color: #fff;
-    background: url("../img/about_bg3.png") no-repeat scroll 0 0 / contain  #fff;
+    background: url("../img/about_bg3.png") no-repeat scroll 0 0 / cover  #fff;
     background-repeat:no-repeat;
-    background-position:top center;
+    background-position:center center;
 
 }
 
@@ -344,7 +344,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 10%;
 }
 
 .download-section {
@@ -367,8 +367,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
-    }
+        padding-top: 10%;
 
     .download-section {
         padding: 100px 0;
@@ -380,7 +379,15 @@ a:focus {
     }
 }
 
+@media(max-width:767px) {
+    .content-section {
+        padding-top: 30%;
+    }
+}
+
+
 .btn {
+
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
