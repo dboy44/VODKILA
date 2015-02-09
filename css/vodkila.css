@@ -202,7 +202,7 @@ a:focus {
 .intro {
     height: 100%;
 /*    margin: 5% 0  auto;*/
-    opacity: .62;
+    opacity: .75;
 }
 
 @media(min-width:767px) {
@@ -248,6 +248,70 @@ a:focus {
 #about_text{
 
 }
+
+
+
+#events {
+   /* width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/events_bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("../img/events_bg.jpg") no-repeat scroll 0 0 / cover  #fff;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+#events  .event-body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("../img/events_bg2.png") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position: center top;
+}
+
+#wtb {
+   /* width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/events_bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    background: url("../img/intro-bg.jpg") no-repeat scroll 0 0 / cover  #fff;
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
+#wtb h1, #wtb h2, #wtb h3{
+    color: #000;
+    margin: 17% auto;
+    background: #bbb;
+    opacity: .75;
+}
+
+
 
 /*
 @media(min-width:767px) {
@@ -344,20 +408,10 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
+
 
 #map {
     width: 100%;
@@ -367,8 +421,8 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 10%;
-
+        padding-top: 5%;
+    }
     .download-section {
         padding: 100px 0;
     }
@@ -381,7 +435,7 @@ a:focus {
 
 @media(max-width:767px) {
     .content-section {
-        padding-top: 30%;
+        padding-top: 17%;
     }
 }
 
