@@ -31,6 +31,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+nav, section{
+    z-index:10;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
@@ -50,6 +54,7 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    z-index: 1000;
 }
 
 a:hover,
@@ -69,6 +74,7 @@ a:focus {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #666;
     padding: 0;
+
 }
 
 .navbar-custom .navbar-brand {
@@ -128,6 +134,7 @@ a:focus {
     border-bottom: 0 none;
     padding: 0;
     transition: background 0.5s ease-in-out 0s, padding 0.5s ease-in-out 0s;
+     z-index: 800;
 }
 
 
@@ -558,4 +565,17 @@ body {
     margin-right: 15px;
     padding: 5px 10px;
     position: relative;
+}
+
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+overflow: hidden;
+opacity: 0.62;
 }
