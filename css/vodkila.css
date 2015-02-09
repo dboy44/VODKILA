@@ -10,7 +10,7 @@ body {
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #000;
-    background-color: #fff;
+    background-color: #000;
 }
 
 html {
@@ -46,7 +46,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color:  #FE0506;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -55,7 +55,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #fff;
 }
 
 .light {
@@ -312,7 +312,11 @@ a:focus {
 }
 
 
-
+#contact{
+    background: #000;
+    color: #fff;
+    height: 100%;
+}
 /*
 @media(min-width:767px) {
     .intro {
@@ -451,17 +455,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #219ab3;
-    color: #219ab3;
+    border: 1px solid #FE0506;
+    color: #FE0506;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #219ab3;
+    border: 1px solid #FE0506;
     outline: 0;
-    color: #000;
-    background-color: #219ab3;
+    color: #fcfcfc;
+    background-color: #FE0506;
 }
 
 ul.banner-social-buttons {
@@ -477,7 +481,7 @@ ul.banner-social-buttons {
 @media(max-width:767px) {
     ul.banner-social-buttons li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         padding: 0;
     }
 
