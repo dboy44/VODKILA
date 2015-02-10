@@ -18,6 +18,20 @@ html {
     height: 100%;
 }
 
+#video_background {
+position: absolute;
+bottom: 0px;
+right: 0px;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: 0;
+overflow: hidden;
+opacity: 0.62;
+background: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -448,6 +462,14 @@ a:focus {
     .content-section {
         padding-top: 17%;
     }
+
+    #video_background {
+display:none;
+}
+    .intro{
+background-color: #fff;
+opacity: .9;
+    }
 }
 
 
@@ -567,16 +589,3 @@ body {
     position: relative;
 }
 
-#video_background {
-position: absolute;
-bottom: 0px;
-right: 0px;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: 0;
-overflow: hidden;
-opacity: 0.62;
-background: #fff;
-}
