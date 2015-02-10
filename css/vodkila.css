@@ -182,7 +182,7 @@ a:focus {
     height: 100%;
     text-align: center;
     color: #fff;
-    background: url("../img/intro-bg6.png") no-repeat scroll 0 5% / cover  rgba(0, 0, 0, 0);
+    background: url("../img/intro-bg6.png") no-repeat scroll 0 5% / cover transparent;
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
@@ -243,12 +243,12 @@ a:focus {
 
     /*display: table;*/
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: center;
     color: #fff;
-    background: url("../img/about_bg3.png") no-repeat scroll 0 0 / cover  #fff;
-    background-repeat:no-repeat;
-    background-position:center center;
+    background: url("../img/about_bg3.png") no-repeat fixed 50% center / contain  #000;
+    /*background-repeat:no-repeat;
+    background-position: top center fixed;*/
 
 }
 
@@ -282,10 +282,10 @@ a:focus {
 #events  .event-body {
     display: table;
     width: 100%;
-    height: 100%;
+    height: 85%;
     text-align: center;
     color: #fff;
-    background: url("../img/events_bg2.png") no-repeat scroll 0 0 / cover  rgba(0, 0, 0, 0);
+    background: url("../img/events_bg2.png") no-repeat scroll 0 0 / contain  rgba(0, 0, 0, 0);
     background-repeat:no-repeat;
     background-size:contain;
     background-position: center top;
@@ -578,4 +578,5 @@ height: auto;
 z-index: 0;
 overflow: hidden;
 opacity: 0.62;
+background: #fff;
 }
